@@ -6,7 +6,7 @@
         <ldap:use-ssl>false</ldap:use-ssl>
         <ldap:use-dns-srv-records>false</ldap:use-dns-srv-records>
         <ldap:ad-referral>false</ldap:ad-referral>
-        <ldap:credentials>${_DOLLAR_}{PF_LDAP_PASSWORD_OBFUSCATED}</ldap:credentials>
+        <ldap:credentials>${PF_LDAP_PASSWORD_OBFUSCATED}</ldap:credentials>
         <ldap:authenticationMeth>simple</ldap:authenticationMeth>
         <ldap:description>pingdirectory</ldap:description>
         <ldap:name>pingdirectory</ldap:name>
