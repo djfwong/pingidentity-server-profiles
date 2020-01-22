@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urn:AdapterConfiguration isInheritTargetApplicationInfo="false" isInheritExtendedContractAttributes="false" name="OTSP" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
     <urn:Fields>
-        <urn:Field name="Password">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiTHpUclFJS0NPSyIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..BvABANCTWh7wUXH828aKBQ.bpoG69KNHoLXiqPWSjztOQ.JXLe7Sd4h6rD-GsgpnjERw</urn:Field>
-        <urn:Field name="Confirm Password">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiTHpUclFJS0NPSyIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..BQ9E7ExNTTWWvFJcqqTAYg.tYQ_WALVR3zhJwuSVlWusg.mbnJs6DBc0cP7905vo_Y6A</urn:Field>
+        <urn:Field name="Password">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiTHpUclFJS0NPSyIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..5TYquxD_WInd8IAAq0wGjQ.nNySoEgb3XoR8VDC94HEiQ.1XeI9xqzvXBCRixam_29lw</urn:Field>
+        <urn:Field name="Confirm Password">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiTHpUclFJS0NPSyIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..nt5RCAKGTuLAXG3pKj_dYg.h-R88SMuE1EnjcZ0cBSXrA.wwX9RegectPJkheckAHHsA</urn:Field>
         <urn:Field name="Transport Mode">2</urn:Field>
         <urn:Field name="Token Name">opentoken</urn:Field>
         <urn:Field name="Cipher Suite">2</urn:Field>

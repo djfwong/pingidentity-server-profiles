@@ -21,14 +21,14 @@
     </md:Extensions>
     <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" WantAuthnRequestsSigned="false">
         <md:Extensions>
-            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-01-22T00:54:07.280Z">
+            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-01-22T23:44:31.161Z">
                 <urn:IncomingBindings Artifact="false" POST="true" Redirect="true" SOAP="false"/>
                 <urn:EnabledProfiles IDPInitiatedSSO="true" IDPInitiatedSLO="false" SPInitiatedSSO="true" SPInitiatedSLO="false"/>
                 <urn:IDP AssertionsSigned="false" DefaultTargetResource="https://www.pingidentity.com">
-                    <urn:TargetAttributeMapping AdapterInstanceId="OTSP" RestrictVirtualServerIds="false">
-                        <urn:AttributeMap Name="subject" Type="Assertion" Value="SAML_SUBJECT"/>
+                    <urn:TargetAttributeMapping AdapterInstanceId="SPStub" RestrictVirtualServerIds="false">
+                        <urn:AttributeMap Name="even_odd_group" Type="Assertion" Value="even-odd-group"/>
                         <urn:AttributeMap Name="employeeID" Type="Assertion" Value="employeeID"/>
-                        <urn:AttributeMap Name="even-odd-group" Type="Assertion" Value="even-odd-group"/>
+                        <urn:AttributeMap Name="ID" Type="Assertion" Value="SAML_SUBJECT"/>
                         <urn:AttributeMap Name="email" Type="Assertion" Value="email"/>
                         <urn:AttributeMap Name="group" Type="Assertion" Value="group"/>
                         <urn:AttributeMap Name="username" Type="Assertion" Value="SAML_SUBJECT"/>

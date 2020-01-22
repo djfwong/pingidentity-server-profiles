@@ -5,5 +5,6 @@
     </con:map>
     <con:map name="SpAuthnAdapterInstances">
         <con:item name="OTSP">com.pingidentity.adapters.opentoken.SpAuthnAdapter</con:item>
+        <con:item name="SPStub">com.pingidentity.test.pnr.spadapter.SimpleAttributeWriterSpAdapter</con:item>
     </con:map>
 </con:config>
