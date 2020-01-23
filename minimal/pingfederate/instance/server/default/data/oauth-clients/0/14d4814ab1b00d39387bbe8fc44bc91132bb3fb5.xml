@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urn:Clients xmlns:urn="urn:pingidentity.com:pf:oauth:client">
-    <urn:Client client_id="AuthCode" name="AuthCode" logo="" persistentGrantExpirationTime="0" enabled="true" lastModified="2020-01-22T22:29:17.900Z" bypassApprovalPage="false" restrictScopes="false" jwksUri="" jwks="" clientAuthnType="NONE" enforceOneTimeJWT="false" isRequireSignedRequest="false">
+    <urn:Client client_id="AuthCode" name="AuthCode" logo="" persistentGrantExpirationTime="0" enabled="true" lastModified="2020-01-23T19:13:49.862Z" bypassApprovalPage="false" restrictScopes="false" jwksUri="" jwks="" clientAuthnType="NONE" enforceOneTimeJWT="false" isRequireSignedRequest="false">
         <urn:Description/>
         <urn:Grant type="authorization_code"/>
-        <urn:RedirectUri>https://*.ping-lab.cloud/*</urn:RedirectUri>
+        <urn:RedirectUri>https://*.ping-lab.cloud*</urn:RedirectUri>
         <urn:SupplementalInfo key="ALLOW_EXCLUSIVE_SCOPES" value="false"/>
         <urn:SupplementalInfo key="DEVICE_FLOW_SETTING" value="SERVER_DEFAULT"/>
         <urn:SupplementalInfo key="PING_ACCESS_LOGOUT_CAPABLE" value="false"/>

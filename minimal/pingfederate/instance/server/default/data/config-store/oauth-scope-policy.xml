@@ -2,12 +2,13 @@
 <con:config xmlns:con="http://www.sourceid.org/2004/05/config">
     <con:map name="scope-descriptions">
         <con:item name="address">Address</con:item>
+        <con:item name="portfolio">Portfolio</con:item>
         <con:item name="phone">Phone</con:item>
         <con:item name="openid">OpenID</con:item>
         <con:item name="profile">Profile</con:item>
         <con:item name="email">Email</con:item>
     </con:map>
-    <con:item name="lastUpdated">1579732010690</con:item>
+    <con:item name="lastUpdated">1579806625410</con:item>
     <con:map name="scope-group-descriptions"/>
     <con:map name="scope-group-mappings"/>
     <con:list name="dynamic-common-scopes"/>
