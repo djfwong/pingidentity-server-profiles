@@ -51,7 +51,7 @@
         <urn:Table name="Symmetric Keys">
             <urn:Row defaultRow="false">
                 <urn:Field name="Key ID">01</urn:Field>
-                <urn:Field name="Key">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiTHpUclFJS0NPSyIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..APGZsC9eZxZYQcu2HKgcwA.cABxgTN56fFeBL-PafpszFw4wWhvdF9ts--OwwzQf3fbULE5lGwSfFNPPA8IusIYgUmPjxURCQYJ5rIuZMsJZQDfii9WsjGO41ZKCjYAp2s.Vtm8U5xTOBMnGU7EvohPhQ</urn:Field>
+                <urn:Field name="Key">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiTHpUclFJS0NPSyIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..FROzWyoHwFCrWP4YvKsr1g.WiYTmeHPKdDWYzlFSQAmkVwAM1uLrEMYLGbAkGXSjh3mo91UeORRRHNPvnmCP2bV6dLeWla5jsEjOX-L7SSbvqecc1T-QgHQRw1Pi0YUpbg.aLjVnXB0Op4AGaTx-eMXpA</urn:Field>
                 <urn:Field name="Encoding"/>
             </urn:Row>
         </urn:Table>
@@ -64,4 +64,5 @@
         <urn:AttributeName>group</urn:AttributeName>
         <urn:AttributeName>username</urn:AttributeName>
     </urn:ExtendedContractAttributes>
+    <urn:ResourceUri>https://pingfederate.prod-rock-lobster.us1.ping-lab.cloud/jwttokens</urn:ResourceUri>
 </urn:AccessTokenManagerConfiguration>

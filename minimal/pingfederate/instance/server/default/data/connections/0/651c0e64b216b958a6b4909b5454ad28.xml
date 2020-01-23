@@ -21,13 +21,13 @@
     </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="false" WantAssertionsSigned="false" SignResponseAsRequired="true">
         <md:Extensions>
-            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-01-22T00:53:55.596Z">
+            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-01-23T21:48:22.725Z">
                 <urn:IncomingBindings Artifact="false" POST="true" Redirect="true" SOAP="false"/>
                 <urn:EnabledProfiles IDPInitiatedSSO="true" IDPInitiatedSLO="false" SPInitiatedSSO="true" SPInitiatedSLO="false"/>
                 <urn:SP AssertionValidityAfterMinutes="5" AssertionValidityBeforeMinutes="5" ConnectionTargetType="Standard" EnableCDCDuringSSO="false">
                     <urn:AdapterToAssertionMapping AbortIfNotFoundInAnyDataSources="false" RestrictVirtualServerIds="false" AdapterInstanceId="PDFormAdapter">
                         <urn:DefaultAttributeMapping>
-                            <urn:AttributeMap Name="employeeID" Type="Adapter" Value="employeeID"/>
+                            <urn:AttributeMap Name="employeeID" Type="Adapter" Value="employeeNumber"/>
                             <urn:AttributeMap Name="even-odd-group" Type="Adapter" Value="even-odd-group"/>
                             <urn:AttributeMap Name="SAML_SUBJECT" Type="Adapter" Value="username"/>
                             <urn:AttributeMap Name="email" Type="Adapter" Value="mail"/>

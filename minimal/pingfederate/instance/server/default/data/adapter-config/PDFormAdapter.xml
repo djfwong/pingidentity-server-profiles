@@ -97,11 +97,10 @@
     </urn:Tables>
     <urn:ExtendedContractAttributes>
         <urn:AttributeName>mail</urn:AttributeName>
-        <urn:AttributeName>employeeID</urn:AttributeName>
         <urn:AttributeName>even-odd-group</urn:AttributeName>
         <urn:AttributeName>group</urn:AttributeName>
+        <urn:AttributeName>employeeNumber</urn:AttributeName>
     </urn:ExtendedContractAttributes>
-    <urn:UniqueKeyField>employeeID</urn:UniqueKeyField>
     <urn:UniqueKeyField>even-odd-group</urn:UniqueKeyField>
     <urn:UniqueKeyField>group</urn:UniqueKeyField>
     <urn:UniqueKeyField>mail</urn:UniqueKeyField>
@@ -110,10 +109,10 @@
     <urn:AttributeMapping>
         <urn1:AttributeMap Name="mail" Type="Adapter" Value="mail" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="policy.action" Type="Adapter" Value="policy.action" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
-        <urn1:AttributeMap Name="employeeID" Type="Adapter" Value="employeeID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="even-odd-group" Type="Adapter" Value="even-odd-group" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="group" Type="Adapter" Value="group" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="username" Type="Adapter" Value="username" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="employeeNumber" Type="Adapter" Value="employeeNumber" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
     </urn:AttributeMapping>
 </urn:AdapterConfiguration>

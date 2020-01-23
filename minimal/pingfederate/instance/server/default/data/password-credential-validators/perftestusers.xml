@@ -29,8 +29,8 @@
         <urn:Table name="Authentication Error Overrides"/>
     </urn:Tables>
     <urn:ExtendedContractAttributes>
-        <urn:AttributeName>employeeID</urn:AttributeName>
         <urn:AttributeName>even-odd-group</urn:AttributeName>
         <urn:AttributeName>group</urn:AttributeName>
+        <urn:AttributeName>employeeNumber</urn:AttributeName>
     </urn:ExtendedContractAttributes>
 </urn:PluginConfiguration>
