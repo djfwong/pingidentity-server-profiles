@@ -6,7 +6,7 @@
 # This setting controls the maximum number of user sessions (for SLO or
 # Authentication Sessions) kept in memory. When this limit is reached, sessions
 # are removed on a least-recently-used basis.
-IdpSessionRegistryMapImpl.max.sessions=500000
+IdpSessionRegistryMapImpl.max.sessions=250000
 
 # This setting controls the maximum number of IdP adapter or IdP connection
 # sessions per user session. When this limit is reached, sessions are removed on
@@ -30,7 +30,7 @@ IdpSessionRegistryMapImpl.expiry.mins=1440
 # This setting controls the maximum number of user sessions kept in memory.
 # When this limit is reached, sessions are removed on a least-recently-used
 # basis.
-SpSessionRegistryMapImpl.max.sessions=500000
+SpSessionRegistryMapImpl.max.sessions=250000
 
 # This setting controls the maximum number of SP adapter sessions per user
 # session.  When this limit is reached, sessions are removed on a first-in
@@ -51,7 +51,7 @@ SpSessionRegistryMapImpl.expiry.mins=1440
 # This setting controls the maximum number of user sessions in the state map.
 # When this limit is reached, sessions are removed on a least-recently-used
 # basis.
-InterReqStateMgmtMapImpl.max.size.state.map=500000
+InterReqStateMgmtMapImpl.max.size.state.map=250000
 
 # This setting controls the expiry period for user sessions in the state map.
 # If no activity has been seen for a given user session for this period, it will
@@ -61,7 +61,7 @@ InterReqStateMgmtMapImpl.expiry.mins.state.map=30
 # This setting controls the maximum number of user sessions in the attribute
 # map.  When this limit is reached, sessions are removed on a
 # least-recently-used basis.
-InterReqStateMgmtMapImpl.max.size.attr.map=500000
+InterReqStateMgmtMapImpl.max.size.attr.map=250000
 
 # This setting controls the expiry period for user sessions in the attribute
 # map.  If no activity has been seen for a given user session for this period,
