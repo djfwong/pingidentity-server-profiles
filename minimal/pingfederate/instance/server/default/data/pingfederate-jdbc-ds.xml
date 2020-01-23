@@ -7,7 +7,7 @@
         <connection-url>jdbc:hsqldb:${pf.server.data.dir}${/}hypersonic${/}ProvisionerDefaultDB;hsqldb.lock_file=false</connection-url>
         <driver-class>org.hsqldb.jdbcDriver</driver-class>
         <user-name>sa</user-name>
-        <password>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiTHpUclFJS0NPSyIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..YfT1feP8FxeReJbtnDQOGg.tPIPQIoWoDL_DRd_HyIdxw.96b4YJ0q1OlwWJuEa41SPw</password>
+        <password>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiTHpUclFJS0NPSyIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..gy_8kQnUa-r9NAXoCbKAig.0OiqoV0uSvpEc1BeP7A8tQ.8HabxanJp2m7M4HpHBmZJg</password>
         <ping-db-type>Custom</ping-db-type>
         <allow-multi-value-attributes>false</allow-multi-value-attributes>
         <connectionTagList>
