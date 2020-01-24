@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urn:PluginConfiguration isInheritExtendedContractAttributes="false" name="perftestusers" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
     <urn:Fields>
-        <urn:Field name="LDAP Datastore">LDAP-FA8D375DFAC589A222E13AA059319ABF9823B552</urn:Field>
+        <urn:Field name="LDAP Datastore">LDAP-9CD1CCA28B7EFF80ECE28C4C57E032BD16FB1F80</urn:Field>
         <urn:Field name="Search Base">ou=perftest,dc=example,dc=com</urn:Field>
         <urn:Field name="Search Filter">uid=${username}</urn:Field>
         <urn:Field name="Scope of Search">Subtree</urn:Field>
