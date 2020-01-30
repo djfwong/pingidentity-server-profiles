@@ -14,3 +14,6 @@
 -XX:MaxNewSize=768m
 #Use the parallel garbage collector
 -XX:+UseParallelGC
+
+# Enable AWS CloudWatch to collect JVM Metrics
+-Dcom.amazonaws.sdk.enableDefaultMetrics
