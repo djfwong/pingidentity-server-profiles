@@ -21,13 +21,29 @@
     </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="false" WantAssertionsSigned="false" SignResponseAsRequired="true">
         <md:Extensions>
-            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-06-23T17:48:51.312Z">
+            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-06-23T22:51:43.595Z">
                 <urn:IncomingBindings Artifact="false" POST="true" Redirect="true" SOAP="false"/>
                 <urn:EnabledProfiles IDPInitiatedSSO="true" IDPInitiatedSLO="false" SPInitiatedSSO="true" SPInitiatedSLO="false"/>
                 <urn:SP AssertionValidityAfterMinutes="5" AssertionValidityBeforeMinutes="5" ConnectionTargetType="Standard" EnableCDCDuringSSO="false">
                     <urn:AdapterToAssertionMapping AbortIfNotFoundInAnyDataSources="false" RestrictVirtualServerIds="false" AdapterInstanceId="HTMLFormPD">
                         <urn:DefaultAttributeMapping>
+                            <urn:AttributeMap Name="even_odd_group" Type="Adapter" Value="username"/>
+                            <urn:AttributeMap Name="employeeID" Type="Adapter" Value="username"/>
                             <urn:AttributeMap Name="SAML_SUBJECT" Type="Adapter" Value="username"/>
+                            <urn:AttributeMap Name="email" Type="Adapter" Value="mail"/>
+                            <urn:AttributeMap Name="group" Type="Adapter" Value="username"/>
+                            <urn:AttributeMap Name="username" Type="Adapter" Value="username"/>
+                            <urn:TokenAuthorizationIssuanceCriteria/>
+                        </urn:DefaultAttributeMapping>
+                    </urn:AdapterToAssertionMapping>
+                    <urn:AdapterToAssertionMapping AbortIfNotFoundInAnyDataSources="false" RestrictVirtualServerIds="false" AdapterInstanceId="HTMLFormPEStubPCV">
+                        <urn:DefaultAttributeMapping>
+                            <urn:AttributeMap Name="even_odd_group" Type="Adapter" Value="even_odd_group"/>
+                            <urn:AttributeMap Name="employeeID" Type="Adapter" Value="employeeID"/>
+                            <urn:AttributeMap Name="SAML_SUBJECT" Type="Adapter" Value="username"/>
+                            <urn:AttributeMap Name="email" Type="Adapter" Value="email"/>
+                            <urn:AttributeMap Name="group" Type="Adapter" Value="group"/>
+                            <urn:AttributeMap Name="username" Type="Adapter" Value="username"/>
                             <urn:TokenAuthorizationIssuanceCriteria/>
                         </urn:DefaultAttributeMapping>
                     </urn:AdapterToAssertionMapping>
@@ -37,6 +53,14 @@
         </md:Extensions>
         <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
         <md:AssertionConsumerService index="0" Location="/sp/ACS.saml2" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" isDefault="true"/>
+        <md:AttributeConsumingService index="0">
+            <md:ServiceName xml:lang="en">AttributeContract</md:ServiceName>
+            <md:RequestedAttribute Name="even_odd_group" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="employeeID" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="email" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="group" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="username" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+        </md:AttributeConsumingService>
     </md:SPSSODescriptor>
     <md:RoleDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" xsi:type="urn:PFAvailableCertsRoleDescriptorType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
     <md:ContactPerson contactType="administrative"/>

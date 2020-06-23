@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urn:AdapterConfiguration authnCtxClassRef="" isInheritAttributeSettings="false" isInheritAttributeMapping="false" maskOgnlValues="false" isInheritExtendedContractAttributes="false" name="HTMLFormPD" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
+<urn:AdapterConfiguration authnCtxClassRef="" isInheritAttributeSettings="false" isInheritAttributeMapping="false" maskOgnlValues="false" isInheritExtendedContractAttributes="false" name="HTMLFormPEStubPCV" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
     <urn:Fields>
         <urn:Field name="Challenge Retries">3</urn:Field>
         <urn:Field name="Session State">None</urn:Field>
@@ -91,19 +91,28 @@
     <urn:Tables>
         <urn:Table name="Credential Validators">
             <urn:Row defaultRow="false">
-                <urn:Field name="Password Credential Validator Instance">pingdirectory</urn:Field>
+                <urn:Field name="Password Credential Validator Instance">StubPCV</urn:Field>
             </urn:Row>
         </urn:Table>
     </urn:Tables>
     <urn:ExtendedContractAttributes>
-        <urn:AttributeName>entryUUID</urn:AttributeName>
-        <urn:AttributeName>mail</urn:AttributeName>
+        <urn:AttributeName>even_odd_group</urn:AttributeName>
+        <urn:AttributeName>employeeID</urn:AttributeName>
+        <urn:AttributeName>email</urn:AttributeName>
+        <urn:AttributeName>group</urn:AttributeName>
     </urn:ExtendedContractAttributes>
+    <urn:UniqueKeyField>email</urn:UniqueKeyField>
+    <urn:UniqueKeyField>employeeID</urn:UniqueKeyField>
+    <urn:UniqueKeyField>even_odd_group</urn:UniqueKeyField>
+    <urn:UniqueKeyField>group</urn:UniqueKeyField>
+    <urn:UniqueKeyField>policy.action</urn:UniqueKeyField>
     <urn:UniqueKeyField>username</urn:UniqueKeyField>
     <urn:AttributeMapping>
-        <urn1:AttributeMap Name="entryUUID" Type="Adapter" Value="entryUUID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
-        <urn1:AttributeMap Name="mail" Type="Adapter" Value="mail" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="even_odd_group" Type="Adapter" Value="even_odd_group" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="policy.action" Type="Adapter" Value="policy.action" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="employeeID" Type="Adapter" Value="employeeID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="email" Type="Adapter" Value="email" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="group" Type="Adapter" Value="group" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="username" Type="Adapter" Value="username" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
     </urn:AttributeMapping>

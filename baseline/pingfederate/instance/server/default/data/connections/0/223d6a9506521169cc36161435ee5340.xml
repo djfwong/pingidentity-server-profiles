@@ -11,6 +11,7 @@
                 <urn:EncryptionPolicy EncryptionAlgorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc" KeyTransportAlgorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p" EncryptAssertion="false" EncryptSubjectNameID="false" SLOEncryptSubjectNameID="false"/>
                 <urn:DecryptionPolicy AssertionEncrypted="false" SubjectNameIDEncrypted="false" AttributeEncrypted="false" SLOSubjectNameIDEncrypted="false"/>
             </urn:Encryption>
+            <urn:ConnectionTemplateProperties/>
             <urn:MetadataUrlId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
             <urn:enableAutoMetadataUpdate>false</urn:enableAutoMetadataUpdate>
             <urn:AdditionalAllowedEntitiesConfiguration>
@@ -22,12 +23,17 @@
     </md:Extensions>
     <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" WantAuthnRequestsSigned="false">
         <md:Extensions>
-            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-06-23T17:54:57.251Z">
+            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-06-23T22:48:47.196Z">
                 <urn:IncomingBindings Artifact="false" POST="true" Redirect="true" SOAP="false"/>
                 <urn:EnabledProfiles IDPInitiatedSSO="true" IDPInitiatedSLO="false" SPInitiatedSSO="true" SPInitiatedSLO="false"/>
                 <urn:IDP AssertionsSigned="false" DefaultTargetResource="https://www.pingidentity.com">
-                    <urn:TargetAttributeMapping AdapterInstanceId="DummyOT" RestrictVirtualServerIds="false">
-                        <urn:AttributeMap Name="subject" Type="Assertion" Value="SAML_SUBJECT"/>
+                    <urn:TargetAttributeMapping AdapterInstanceId="SPStubAdapter" RestrictVirtualServerIds="false">
+                        <urn:AttributeMap Name="even_odd_group" Type="Assertion" Value="even_odd_group"/>
+                        <urn:AttributeMap Name="employeeID" Type="Assertion" Value="employeeID"/>
+                        <urn:AttributeMap Name="ID" Type="Assertion" Value="username"/>
+                        <urn:AttributeMap Name="email" Type="Assertion" Value="email"/>
+                        <urn:AttributeMap Name="group" Type="Assertion" Value="group"/>
+                        <urn:AttributeMap Name="username" Type="Assertion" Value="username"/>
                         <urn:TokenAuthorizationIssuanceCriteria/>
                     </urn:TargetAttributeMapping>
                     <urn:AccountLinkingAndMapping Type="mapping" IncludeAdditionalAttributes="false"/>
@@ -37,6 +43,11 @@
         </md:Extensions>
         <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="/idp/SSO.saml2"/>
         <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="/idp/SSO.saml2"/>
+        <saml:Attribute Name="even_odd_group" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <saml:Attribute Name="employeeID" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <saml:Attribute Name="email" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <saml:Attribute Name="group" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <saml:Attribute Name="username" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
     </md:IDPSSODescriptor>
     <md:RoleDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" xsi:type="urn:PFAvailableCertsRoleDescriptorType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <urn:availableCert>
