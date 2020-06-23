@@ -14,4 +14,3 @@
 -XX:MaxNewSize=2048m
 #Use the parallel garbage collector
 -XX:+UseParallelGC
-
