@@ -5,14 +5,13 @@
 #
 
 #Minimum heap size
--Xms512m
+-Xms4096m
 #Maximum heap size
--Xmx1024m
+-Xmx4096m
 #Minimum size for the Young Gen space
--XX:NewSize=256m
+-XX:NewSize=2048m
 #Maximum size for the Young Gen space
--XX:MaxNewSize=512m
+-XX:MaxNewSize=2048m
 #Use the parallel garbage collector
 -XX:+UseParallelGC
 
--Dcom.amazonaws.sdk.enableDefaultMetrics
